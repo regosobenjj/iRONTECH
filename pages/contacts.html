@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | iRONTECH</title>
+
+  <!-- Favicon & Styles -->
+  <link rel="icon" type="image/png" href="../Images/icon.png" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="contacts.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <a href="../index.html"><img src="../Images/logo.png" class="logo" alt="iRONTECH Logo"></a>
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contacts.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- BANNER -->
+  <section class="contact-banner">
+    <div class="banner-text">
+      <h1>Contact & Registration</h1>
+      <p>Have questions or want to join our events? Reach out or register below.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="contact-container">
+      
+      <!-- CONTACT FORM -->
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="https://formsubmit.co/feu.regoso@gmail.com" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <select name="service" required>
+            <option value="" disabled selected>Select a Service</option>
+            <option value="Threat Monitoring">Threat Monitoring</option>
+            <option value="Network Security">Network Security</option>
+            <option value="Data Encryption">Data Encryption</option>
+            <option value="Incident Response">Incident Response</option>
+            <option value="Cybersecurity Training">Cybersecurity Training</option>
+            <option value="Other">Other</option>
+          </select>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- DIVIDER -->
+      <div class="form-divider"></div>
+
+      <!-- EVENTS REGISTRATION FORM -->
+      <div class="contact-form">
+        <h2>Event Registration</h2>
+        <form action="https://formsubmit.co/feu.regoso@gmail.com" method="POST">
+          <input type="text" name="event_name" placeholder="Your Name" required />
+          <input type="email" name="event_email" placeholder="Your Email" required />
+          <select name="event_choice" required>
+            <option value="" disabled selected>Select an Event</option>
+            <option value="CyberShield 2025">CyberShield 2025</option>
+            <option value="Phishing Webinar">Phishing & Social Engineering Webinar</option>
+            <option value="Hacker Workshop">Hacker Simulation Workshop</option>
+          </select>
+          <input type="date" name="event_date" required />
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="../Images/logo.png" alt="iRONTECH Logo" class="footer-logo" />
+    <p>&copy; 2025 iRONTECH. All rights reserved.</p>
+  </footer>
+
+  <script src="contacts.js"></script>
+</body>
+</html>

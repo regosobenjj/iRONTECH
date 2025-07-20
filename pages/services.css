@@ -1,0 +1,119 @@
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .services-banner {
+      background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('/Images/banner1.png');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .services-banner h1 {
+      font-size: 3em;
+      color: #00fc93;
+      margin-bottom: 10px;
+    }
+
+    .services-banner p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .service-box {
+      background: #111;
+      border: 1px solid #00fc93;
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 10px #00fc93;
+    }
+
+    .service-box img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .service-box h2 {
+      color: #00fc93;
+      margin-bottom: 10px;
+    }
+
+    .service-box p {
+      font-size: 0.95em;
+      margin-bottom: 15px;
+    }
+
+    .service-box ul {
+      text-align: left;
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .service-box ul li {
+      margin: 5px 0;
+      color: #21ff51;
+    }
+
+    .contact-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #00fc93;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .contact-button:hover {
+      background: #21ff51;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .footer-logo {
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .services-banner h1 {
+        font-size: 2em;
+      }
+
+      .services-banner p {
+        font-size: 1em;
+      }
+    }
